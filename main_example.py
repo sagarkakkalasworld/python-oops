@@ -12,15 +12,11 @@ class Car:
 
 class Roadster(Car):
 
-    def __init__(self, brand, model, speed):
-        super().__init__(brand, model)
-        self.speed = speed
-
     def fly(self):
-        print(self.brand, "is flying at", self.speed, "km/h")
+        print(self.brand, "is flying at")
 
     def drive(self):
-        print(self.brand, "is driving at", self.speed, "km/h")
+        print(self.brand, "is driving at")
 
 
 class GTA(Car):
@@ -55,7 +51,7 @@ def main():
     print(car1.owner)
 
     # Inheritance
-    car2 = Roadster("Tesla", "Roadster", 300)
+    car2 = Roadster("Tesla", "Roadster")
 
     car2.drive()
     car2.fly()
